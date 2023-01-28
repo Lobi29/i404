@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Comfortaa&family=Oswald&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Caveat Brush', cursive;
+    background: #eee;
+    color: white;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    background: url(/images/spaceBackground.jpg) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 3em 1em;
+    color: #fff;
+}
+
+.content h2, .content p {
+    margin: 0;
+}
+
+.content p {
+    font-family: 'Caveat Brush', cursive;
+    margin: 0.3em 0 0.3em 0;
+    color: #dbdbdb;
+}
+
+.content a {
+    color: #000;
+    text-decoration: none;
+    background: #fff;
+    pad: 0.7em 2em;
+    border-radius: 3em;
+    transition: 0.4s;
+}
+
+.content a:hover {
+    background: #000;
+    color: #fff;
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(/images/astronaut.gif) no-repeat center;
+    background-size: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+section h1 {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 9em;
+    position: absolute;
+    z-index: 1;
+}
