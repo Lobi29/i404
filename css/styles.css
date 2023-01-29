@@ -47,13 +47,6 @@ section::before {
     color: #90e0ef;
 }
 
-.content h2 {
-    font-size: 3em;
-    position: relative;
-    z-index: 2;
-    color: #0096c7;
-}
-
 .content {
     display: flex;
     flex-direction: column;
@@ -61,16 +54,31 @@ section::before {
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 1em;
+    
+}
 
+.content h2 {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    /* color: #0096c7; */
+    color: #000;
+    font-size: 2em;
 }
 
 .content p {
+    margin: 0;
+    margin-bottom: 0.5em;
     font-size: 2em;
-    color: rgb(14, 24, 210);
+    font-weight: bolder;
+    /* color: rgb(14, 24, 210); */
+    color: rgb(28, 23, 23);
 }
 
 .content a {
-    position: relative;
     text-decoration: none;
     /* text-align: center */
     font-size: 1.5em;
@@ -80,9 +88,10 @@ section::before {
     color: #fff;
     background-color: #03045e;
     transition: 0.5s;
+    z-index: 3;
 }
 
 .content a:hover {
-    background: #fff;
-    color: #000;
+    cursor: pointer;
+    background: #000;
 }
